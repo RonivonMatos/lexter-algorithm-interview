@@ -24,6 +24,23 @@ Este projeto se trata da minha resolução para o seguinte problema: [Confira aq
   - path vazio: `[{ entryId: "1", path: [] }]`
   - formatação incorreta: `[entryId: "1", path: ["root1"]]`
 
+## Como rodar o projeto
+
+Clone o repositório em sua máquina:
+```
+git clone git@github.com:RonivonMatos/lexter-algorithm-interview.git
+```
+
+Instale as dependências:
+```
+npm install
+```
+
+Inicie a aplicação:
+```
+npm start
+```
+
 ## Screeenshots
 
 ![image](https://github.com/RonivonMatos/lexter-algorithm-interview/assets/55556872/c2bd9619-93cb-4b62-b131-3853047dea97)
