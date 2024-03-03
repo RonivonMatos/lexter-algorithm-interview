@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Data Formatter</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+    <body>
+        <main class="main-screen">
+            <div class="title">
+                <h1>{ Data Formatter }</h1>
+            </div>
+            <div class="text-input">
+                <form class="input-form" id="conversionForm" action="/" method="post">
+                    <textarea placeholder="Insira aqui os dados a serem formatados..." class="textarea" rows="20" cols="100" name="input" form="conversionForm"><%=input%></textarea>
+                    <div class="btn-wrapper">
+                        <button class="btn" type="submit">Formatar</button>
+                    </div>    
+                </form>
+            </div>
+            <div class="text-output">
+                <textarea class="textarea" id="output" disabled rows="20" cols="100"><%=output%></textarea>
+            </div>
+        </main>
+    </body>
+</html>
