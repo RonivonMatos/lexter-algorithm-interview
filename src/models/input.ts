@@ -39,16 +39,13 @@ class InputModel {
           currentPath: item.path.pop()!,
           children: [],
         };
-        let currentTree = output.find((tree: Output) =>
+        let currentTreeIndex = output.findIndex((tree: Output) =>
           tree.fullPath.includes(rootPath)
         );
-        if (currentTree) {
-          output.map((tree: Output, index) => {
-            if (tree.fullPath.includes(rootPath)) {
-              const newTree = this.addToTree(tree, node);
-              output[index] = newTree;
-            }
-          });
+        if (currentTreeIndex >= 0) {
+          const currentTree = output[currentTreeIndex];
+          const newTree = this.addToTree(currentTree, node);
+          output[currentTreeIndex] = newTree;
         } else {
           output.push(node);
         }
