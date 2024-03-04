@@ -1,6 +1,16 @@
-import { Input } from "../input";
-import { Output } from "../output";
 import jsonFormatter from "../utils/json-formatter";
+
+export interface Input {
+  entryId: string;
+  path: string[];
+}
+
+export interface Output {
+  entryId: number;
+  fullPath: string;
+  currentPath: string;
+  children: Output[];
+}
 
 class InputModel {
   constructor() {}

@@ -1,5 +1,5 @@
-import { inputList } from "../input";
-import { outputList } from "../output";
+import { inputList } from "../mocks/input";
+import { outputList } from "../mocks/output";
 import InputModel from "./input";
 
 const invalidBodyPath = [
