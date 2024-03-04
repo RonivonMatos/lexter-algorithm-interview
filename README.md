@@ -24,6 +24,10 @@ Este projeto se trata da minha resolução para o seguinte problema: [Confira aq
   - path vazio: `[{ entryId: "1", path: [] }]`
   - formatação incorreta: `[entryId: "1", path: ["root1"]]`
 
+## Demo
+
+-  [Confira aqui](https://lexter-algorithm-interview.onrender.com/)
+
 ## Como rodar o projeto
 
 Clone o repositório em sua máquina:
